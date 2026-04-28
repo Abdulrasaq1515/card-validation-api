@@ -4,9 +4,9 @@
   "description": "Card number validation API endpoint",
   "main": "dist/server.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/server.js",
-    "dev": "ts-node-dev --respawn src/server.ts",
+    "build": "node init && tsc",
+    "start": "node init && node dist/server.js",
+    "dev": "node init && ts-node-dev --respawn src/server.ts",
     "test": "jest --runInBand"
   },
   "dependencies": {
